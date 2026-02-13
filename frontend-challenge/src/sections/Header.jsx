@@ -42,7 +42,7 @@ const Header = () => {
               <div className="absolute w-0.5 h-0.5 bg-[#CA4E18] top-0.5 left-2.5 rounded-full"></div>
             </div>
           </button>
-          <span className="text-[15px] font-bold tracking-widest  text-[#236231] dark:text-[#4731D3] dark:text-white">
+          <span className="text-[15px] font-bold tracking-widest  text-[#236231]  dark:text-white">
             {theme === 'light' ? "DARK MODE" : "LİGHT MODE"}
           </span>
         </div>
