@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@layer components {
+  .footer-icon {
+    @apply w-[35px] h-[35px] 
+    border-2 border-[#4731D3]
+    dark:bg-[#4731D3] rounded-full 
+    flex items-center justify-center;
+  }
+}
+
