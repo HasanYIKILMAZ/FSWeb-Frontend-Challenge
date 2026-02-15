@@ -1,7 +1,12 @@
 
 import project1Image from "../assets/app-example1.png";
 import project3Image from "../assets/app-example3.png";
-
+import jsLogo from "../assets/js-logo.jpg";
+import reactLogo from "../assets/react-logo.png";
+import reduxLogo from "../assets/redux-logo.png";
+import nodeLogo from "../assets/node-logo.jpg";
+import vsLogo from "../assets/vs-logo.png";
+import figmaLogo from "../assets/figma-logo.jpg";
 
 
 
@@ -51,11 +56,12 @@ export const headerData = {
 };
 
 export const skillsData = [
-  { name: "HTML", level: "Advanced" },
-  { name: "CSS", level: "Advanced" },
-  { name: "JavaScript", level: "Advanced" },
-  { name: "React", level: "Intermediate" },
-  { name: "TailwindCSS", level: "Intermediate" }
+    { name: "JavaScript", logo: jsLogo },
+    { name: "React", logo: reactLogo },
+    { name: "Redux", logo: reduxLogo },
+    { name: "Node", logo: nodeLogo },
+    { name: "VS Code", logo: vsLogo },
+    { name: "Figma", logo: figmaLogo },
 ];
 
 
@@ -93,6 +99,16 @@ export const profileData = {
   },
 };
 
+export const textMap = {
+  en: {
+    title: "Projects",
+    view: "View Site",
+  },
+  tr: {
+    title: "Projeler",
+    view: "Siteyi Gör",
+  },
+};
 
 export const projectsData = [
   {

@@ -1,15 +1,18 @@
 
-import {  useTheme } from "../context/ThemeContext";
-import {  useLanguage } from "../context/LanguageContext";
+import {  useTheme } from "../../context/ThemeContext";
+import {  useLanguage } from "../../context/LanguageContext";
 
 
 
-const Header = () => {
+const HeroHeader = () => {
   const { theme, toggleTheme } = useTheme();
   const { language, toggleLanguage } = useLanguage();
 
-
-
+  const setLanguageText = {
+    en:'SWITCH TO ENGLISH',
+    tr:'TÜRKÇE’YE GEÇ',
+  }
+  
   return (
     <header className="absolute top-0 left-0 w-full h-auto z-20 flex flex-col justify-center gap-2  md:justify-around md:flex-row lg:ml-10  items-center py-4 min-w-150 mx-auto">
       
@@ -25,7 +28,7 @@ const Header = () => {
           onClick={toggleLanguage}
           className="font-bold text-[15px] tracking-widest text-[#CBF281] dark:text-white hover:underline transition"
         >
-          {language === "en" ? "TÜRKÇE’YE GEÇ" : "SWITCH TO ENGLISH"}
+          {setLanguageText[language]}
         </button>
       
       
@@ -53,4 +56,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeroHeader;

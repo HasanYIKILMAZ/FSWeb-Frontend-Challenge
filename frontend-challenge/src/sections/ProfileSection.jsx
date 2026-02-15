@@ -34,13 +34,13 @@ const ProfileSection = () => {
               </h3>
 
               <div className="grid grid-cols-[140px_1fr] gap-y-3 text-sm leading-6 tracking-wide">
-                {basicInfo.map((item, index) => (
+                {basicInfo.map((info, index) => (
                   <React.Fragment key={index}>
                     <span className="text-[#CBF281] font-semibold">
-                      {item.label[language]}
+                      {info.label[language]}
                     </span>
                     <span className="text-white">
-                      {item.value}
+                      {info.value}
                     </span>
                   </React.Fragment>
                 ))}
